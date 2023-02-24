@@ -14,8 +14,8 @@ public class Main {
             System.out.println("Bienvenido a la aplicación de mensajes");
             System.out.println("1. crear mensaje");
             System.out.println("2. listar mensaje");
-            System.out.println("3. editar mensaje");
-            System.out.println("4. borrar mensaje");
+            System.out.println("3. borrar mensaje");
+            System.out.println("4. editar mensaje");
             System.out.println("5. salir");
 
             //acciones a realizar de acuerdo a la opción elegida
@@ -27,10 +27,11 @@ public class Main {
                     MensajesService.listarMensaje();
                     break;
                 case 3:
-                    MensajesService.editarMensaje();
+                    MensajesService.borrarMensaje();
+
                     break;
                 case 4:
-                    MensajesService.borrarMensaje();
+                    MensajesService.editarMensaje();
                     break;
                 default:
                     break;
